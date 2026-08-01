@@ -15,8 +15,22 @@
 
 function rectangle(width, height) {
   // TODO: replace this with your implementation
-  
+  if (width < 1 || height < 1){
+	return "";
+  }
+  let line = "";
+  for (let y = 0; y < height; y++) {
+	for (let x = 0; x < width; x++){
+		line += "*";
+	}
+	if (y < height -1){
+		line += "\n";
+	}
+	}
+  return line;
 }
+
+// console.log(rectangle(3, 2), "***\n***");
 
 // --- Tests (do not edit) ---
 import { strictEqual } from "node:assert";
