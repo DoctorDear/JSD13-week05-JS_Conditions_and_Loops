@@ -18,16 +18,29 @@ function rectangle(width, height) {
   if (width < 1 || height < 1){
 	return "";
   }
-  let line = "";
+// String Accumulator
+//   let line = "";
+//   for (let y = 0; y < height; y++) {
+// 	for (let x = 0; x < width; x++){
+// 		line += "*";
+// 	}
+// 	if (y < height -1){
+// 		line += "\n";
+// 	}
+// 	}
+//   return line;
+// }
+
+// Array Accumulator & Join Method
+  let line = [];
   for (let y = 0; y < height; y++) {
-	for (let x = 0; x < width; x++){
-		line += "*";
+	let currentLine = "";
+	for (let x = 0; x < width; x++) {
+		currentLine += "*"
 	}
-	if (y < height -1){
-		line += "\n";
+	line.push(currentLine);
 	}
-	}
-  return line;
+	return line.join("\n");
 }
 
 // console.log(rectangle(3, 2), "***\n***");
