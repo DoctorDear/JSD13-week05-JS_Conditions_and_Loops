@@ -37,7 +37,7 @@ function rectangle(width, height) {
 	let currentLine = "";
 	for (let x = 0; x < width; x++) {
 		currentLine += "*"
-	}
+	}	
 	line.push(currentLine);
 	}
 	return line.join("\n");
