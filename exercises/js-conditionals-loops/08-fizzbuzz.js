@@ -15,7 +15,27 @@
 
 function fizzBuzz(n) {
   // TODO: replace this with your implementation
+  if (n < 1) {
+	return [];
+  } 
+
+  let result = []
+  for (let i = 1; i <= n; i++){
+	if (i % 3 === 0 && i % 5 === 0) {
+		result.push("FizzBuzz");
+	} else if (i % 5 == 0) {
+		result.push("Buzz");
+	}
+	else if (i % 3 == 0) {
+		result.push("Fizz");
+	} else {
+		result.push(i);
+	}
+  }
+  return result;
 }
+
+// console.log(fizzBuzz(30))
 
 // --- Tests (do not edit) ---
 import { deepStrictEqual } from "node:assert";
