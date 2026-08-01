@@ -15,6 +15,7 @@
 
 function rectangle(width, height) {
   // TODO: replace this with your implementation
+  
 }
 
 // --- Tests (do not edit) ---

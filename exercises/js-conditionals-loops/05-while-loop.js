@@ -23,7 +23,7 @@ function countDigits(n) {
 //   }
 //   return count;
 
-	do {
+	do { // do while ไม่ต้องใข้ if (n === 0) เพราะ do...while ให้ code ทำงานก่อน 1 รอบ
 		count++;
 		n = Math.floor(n / 10);
 	} while (n > 0 );
